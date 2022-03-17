@@ -1,0 +1,11 @@
+if [[ $# -ne 1 ]]; then
+  exit 1
+else
+  while [[ true ]]; do #espera 10 seg e informa los usuarios logeados
+     sleep 10
+     echo $(who) | grep $1 | if[[$(wc -l) -eq 1]]; then 
+          echo "Usuario $1 se ha logeado en el sistema"
+          exit 0
+     fi
+  done
+fi
