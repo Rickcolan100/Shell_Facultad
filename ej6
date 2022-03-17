@@ -1,0 +1,12 @@
+if [ $# -ne 1 ]; then
+  echo "Es necesario 1 parametro, extension."
+	echo "Saliendo con status 1"
+	exit 1
+fi 
+u=$(whoami)
+c=$(find /home -name "*$1" -user $u | wc -
+r="La cantidad de archivos con extension $1 para el usuario $u es $c"
+echo $r
+echo "Saliendo con status 
+echo $r >> /var/log/reporte.txt
+exit 0
