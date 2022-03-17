@@ -1,3 +1,4 @@
+#!/bin/bash
 if [ $# -ne 1 ]; then
   echo "Es necesario 1 parametro, extension."
 	echo "Saliendo con status 1"
