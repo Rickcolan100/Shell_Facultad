@@ -1,0 +1,10 @@
+echo "ingrese un numero"
+read numa
+echo "ingrese otro numero"
+read numb
+select op in + -  \*
+do
+ echo "la operacion es: $op"
+ echo "el resultado es: $((numa $op numb)) "
+done 
+exit
