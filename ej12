@@ -1,3 +1,4 @@
+#!/bin/bash
 listaU=$(ls -l /etc/passwd)
 if [[ $# -le 2 ]]; then
    case $1 in
