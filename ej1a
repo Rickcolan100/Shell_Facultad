@@ -1,0 +1,12 @@
+echo "-OPERACIONES ARIMETRICAS-"
+echo "la suma entre $1 y $2 es: $(($1 + $2))"
+echo "la resta entre $1 y $2 es: $(($1 - $2))"
+echo "la multiplicacion entre $1 y $1 es: $(($1 * $1))"
+echo "la division entre $1 y $2 es: $(($1 / $1))"
+echo "-NUMERO MAXIMO-"
+if [[ $1 -gt $2 ]]; then
+  echo "$1 es el mas grande"
+elif [[ $2 -gt $1 ]]; then
+  echo "$2 es el mas grande"
+fi
+exit
