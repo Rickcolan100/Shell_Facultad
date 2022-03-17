@@ -1,3 +1,4 @@
+   #!/bin/bash
    echo "ingrese un numero"
    read numa
    echo "ingrese otro numero"
