@@ -1,3 +1,4 @@
+#!/bin/bash
 if [ $# -eq 1 ]; then
   if [ -e $1 ]; then #-e es un directorio o con -d
     if [ -f $1 ]; then  #-f es un archivo
