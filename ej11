@@ -1,0 +1,13 @@
+i=0
+j=0
+diml1=${#vector1[@]}
+diml2=${#vector1[@]}
+while [[ i -le diml1 ]]; do
+  while [[ i -le diml2 ]]; do
+    suma=$((${vector1[$i]} + ${vector2[$j]})) 
+    echo "La suma de los elementos en la posicion $i es $suma"
+    l=$((i+1))
+    j=$((j+1)) 
+  done
+done
+exit
