@@ -1,0 +1,16 @@
+echo "Selecione una de las opciones: "
+select op in Listar DondeEstoy QuienEsta Salir
+do
+ case op in
+ Listar)
+    ls -l
+    ;;
+ DondeEstoy)
+    pwd
+    ;;
+ QuienEsta)  
+    echo who | wc -l
+    ;;                 
+ esac
+ done
+exit
