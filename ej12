@@ -1,0 +1,25 @@
+listaU=$(ls -l /etc/passwd)
+if [[ $# -le 2 ]]; then
+   case $1 in
+     -b)
+      for i in "${!listaU[@]}" ; do
+       if [[ ${listaU[$i]} -eq $2 ]]; then
+         pos=$2
+       else 
+         exit 0
+       fi
+      done
+      echo "El usuario se encuentra en la posicion $pos"
+     ;;
+     -l)
+        echo "La cantidad de usuarios es ${#listaU[@]}"
+     ;;
+     -i)
+       echo "${listaU[@]}"
+     ;;
+     esac
+else
+  echo "Cantidad de parametros incorrectos"
+  exit 1
+fi
+
