@@ -1,0 +1,11 @@
+if [[ $# -ne 3 ]]; then #confirmo que recibo 3 parametros
+ exit 
+else 
+  case $2 in #si son 2 entonces depende de la accion cambia de lugar
+      "-b")
+      mv $1 "$1$3" 
+      ;;
+      "-a")
+      mv $1 "$3$1"
+      ;;
+  esac
