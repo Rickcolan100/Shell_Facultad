@@ -1,3 +1,4 @@
+#!/bin/bash
 echo "Selecione una de las opciones: "
 select op in Listar DondeEstoy QuienEsta Salir
 do
