@@ -1,3 +1,4 @@
+#!/bin/bash
 ls | tr -d "aA" | tr '[:upper:][:lower:]' '[:lower:][:upper:]' #manera1
 ls | tr -d 'aA' | tr 'b-zB-Z' 'B-Zb-z' #manera2
 exit 0
