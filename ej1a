@@ -1,3 +1,4 @@
+#!/bin/bash
 echo "-OPERACIONES ARIMETRICAS-"
 echo "la suma entre $1 y $2 es: $(($1 + $2))"
 echo "la resta entre $1 y $2 es: $(($1 - $2))"
