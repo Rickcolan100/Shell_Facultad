@@ -1,0 +1,16 @@
+   echo "ingrese un numero"
+   read numa
+   echo "ingrese otro numero"
+   read numb
+   echo "-OPERACIONES ARIMETRICAS-"
+          echo "la suma entre $numa y $numb es: $((numa + numb))"
+   echo "la resta entre $numa y $numb es: $((numa - numb))"
+   echo "la multiplicacion entre $numa y $numb es: $((numa * numb))"
+   echo "la division entre $numa y $numb es: $((numa / numb))"
+   echo "-NUMERO MAXIMO-"
+   if [[ $numa -gt $numb ]]; then
+       echo "$numa es el mas grande"
+    elif [[ $numb -gt $numa ]]; then
+          echo "$numb es el mas grande"
+    fi
+    exit
